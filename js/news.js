@@ -15,14 +15,14 @@ async function FetchApi(){
 searching();
   if (!searchValue) return; // Don't make API call if search value is empty
   let response = await fetch(
-    `https://newsapi.org/v2/everything?q=${searchValue}&apiKey=ff94301c6f6a4fc7b1d8a6c95a755c2d`
+    `https://newsdata.io/api/1/latest?apikey=pub_473093719d43fd51a4b3a3f4462d95696b591&q=${searchValue}`
   );
   
     let data = await response.json();
     console.log(data);
      
-    for (let i=0;i<data.articles.length;i++){
-      let articel=data.articles[i]; 
+    for (let i=0;i<data.results.length;i++){
+      let articel=data.results[i]; 
       const colDiv=document.createElement('div');
       colDiv.className='col-md-4 col-12';
       const cardDiv=document.createElement('div');
@@ -44,7 +44,7 @@ searching();
        const articalImage=document.createElement('img');
        articalImage.className=' w-100 rounded-2';
        articalImage.style.width='300px';
-       articalImage.src = articel.urlToImage;
+       articalImage.src = articel.image_url;
        articalImage.onerror=function(){
         this.src='images/alaska.jpg'
        }
