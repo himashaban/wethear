@@ -23,24 +23,37 @@ searching();
      
     for (let i=0;i<data.results.length;i++){
       let articel=data.results[i]; 
+     
       const colDiv=document.createElement('div');
       colDiv.className='col-md-4 col-12';
+      
       const cardDiv=document.createElement('div');
       cardDiv.className='cart';
       cardDiv.style.width = "300px";
       cardDiv.style.height = "330px";
+      
       const cardBody=document.createElement('div');
       cardBody.className='card-body';
+     
+      const publisherima=document.createElement('img');
+      publisherima.className=' publogo';
+      publisherima.style.width='30px';
+      publisherima.style.height='25px';
+      publisherima.src = articel.source_icon;
+
       const publisher= document.createElement('p');
       publisher.className='col-12 text-muted fw-light fst-italic ';
-      publisher.textContent = "made by " + articel.author;
+      publisher.textContent = "made by " + articel.source_id ;
       rowData.classList.add('align-items-center');
-       const title=document.createElement('h4');
+       
+      const title=document.createElement('h4');
        title.className='card-title text-black';
        title.textContent=articel.title.substring(0,30);
+       
        const content = document.createElement("p");
        content.style.color='black'
-       content.textContent = articel.content.substring(0,70); 
+       content.textContent = articel.description.substring(0, 70); 
+      
        const articalImage=document.createElement('img');
        articalImage.className=' w-100 rounded-2';
        articalImage.style.width='300px';
@@ -63,6 +76,7 @@ rowLine.style.marginBottom = "1rem";
       cardBody.appendChild(title);
       cardBody.appendChild(content);
             cardBody.appendChild(publisher);
+            publisher.appendChild(publisherima);
             
 
              colDiv.appendChild(rowLine);
