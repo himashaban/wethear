@@ -35,11 +35,11 @@ async function fecthapi(){
         cardBody.className = "card-body";
         let image = document.createElement("img");
         image.className = "w-100";
-        image.src = found.links.download;
+        image.src = await found.links.download;
 
         colDiv.appendChild(cardDiv);
         cardDiv.appendChild(image);
-
+        
         rowdata.appendChild(colDiv);
     }
 }
