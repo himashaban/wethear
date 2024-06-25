@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #87CEEB;
+    /* Light blue background */
+}
+.fa-cloud.golden{
+    color: white;
+}
+.fa-cloud.golden:hover {
+    color: gold;
+}
+/* photos.css or styles.css */
+
+.cloud {
+    font-size: 3em;
+    color: #333; /* Cloud icon color */
+    position: absolute;
+    animation-duration: 30s; /* Adjust animation duration */
+    animation-timing-function: linear; /* Smooth linear movement */
+    animation-iteration-count: infinite; /* Repeat indefinitely */
+}
+
+.cloud1 {
+    top: 30%;
+    right: -10%; /* Start off screen to the left */
+    animation: cloudMove 30s linear infinite; /* Apply animation to cloud1 */
+}
+
+.cloud2 {
+    top: 40%;
+    right: -20%; /* Start off screen to the left */
+    animation: cloudMove 40s linear infinite; /* Apply animation to cloud2 */
+}
+
+.cloud3 {
+    top: 50%;
+    right: -30%; /* Start off screen to the left */
+    animation: cloudMove 50s linear infinite; /* Apply animation to cloud3 */
+}
+
+.cloud4 {
+    top: 60%;
+    right: -40%; /* Start off screen to the left */
+    animation: cloudMove 60s linear infinite; /* Apply animation to cloud4 */
+}
+
+.cloud5 {
+    top: 70%;
+    right: -50%; /* Start off screen to the left */
+    animation: cloudMove 70s linear infinite; /* Apply animation to cloud5 */
+}
+
+@keyframes cloudMove {
+    0% {
+        transform: translateX(100%); /* Move cloud off screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move cloud off screen to the left */
+    }
+}

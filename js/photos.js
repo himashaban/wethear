@@ -23,27 +23,25 @@ async function fecthapi(){
     let data= await response.json();
     console.log(data.results[0].links.download)
 
-    for(let i=0; i<data.results.length;i++){
-         let found = data.results[i];
+     for (let i = 0; i < data.results.length; i++) {
+        let found = data.results[i];
 
-         let colDiv = document.createElement("div");
-         colDiv.className = "col-md-3 my-2 ";
-         rowdata.style.marginTop='100px';
-         let cardDiv = document.createElement("div");
-         cardDiv.className = "card";
-         let cardBody = document.createElement("div");
-         cardBody.className = "card-body";         
-         let image = document.createElement("img");
-         image.className = "w-100";
-         image.src = found.links.download;
-         rowdata.appendChild(colDiv);
-         colDiv.appendChild(cardDiv);
-         cardDiv.appendChild(image);
+        let colDiv = document.createElement("div");
+        colDiv.className = "col-md-3 my-2 image-container"; // Add the image-container class
+
+        let cardDiv = document.createElement("div");
+        cardDiv.className = "card";
+        let cardBody = document.createElement("div");
+        cardBody.className = "card-body";
+        let image = document.createElement("img");
+        image.className = "w-100";
+        image.src = found.links.download;
+
+        colDiv.appendChild(cardDiv);
+        cardDiv.appendChild(image);
+
+        rowdata.appendChild(colDiv);
     }
- 
-
-
-
-    
 }
-fecthapi();
+
+fetchApi();
