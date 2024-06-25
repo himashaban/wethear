@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/banner.jpeg');
+    background-image: url('../images/banner.jpeg');
     background-size: cover;
     background-position: center;
 
@@ -10,6 +10,9 @@ body {
     align-items: center;
     scroll-behavior: smooth;
 }
+
+/* Other styles remain unchanged */
+
 
 .container {
     background-color: rgba(255, 255, 255, 0.5);
