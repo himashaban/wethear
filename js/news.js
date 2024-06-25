@@ -52,7 +52,7 @@ searching();
        
        const content = document.createElement("p");
        content.style.color='black'
-       content.textContent = articel.description.substring(0, 70); 
+       content.textContent = articel.description; 
       
        const articalImage=document.createElement('img');
        articalImage.className=' w-100 rounded-2';
