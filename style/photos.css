@@ -9,6 +9,7 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
+    height: auto;
     /* Hide overflow */
 }
 .fa-cloud.golden{
