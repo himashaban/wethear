@@ -1,8 +1,15 @@
 body {
     margin: 0;
-    overflow: hidden;
+   
     background-color: #87CEEB;
     /* Light blue background */
+    scroll-behavior: smooth;
+}
+.cloud-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow */
 }
 .fa-cloud.golden{
     color: white;
@@ -12,6 +19,9 @@ body {
 }
 /* photos.css or styles.css */
 
+#rowdata{
+    margin-top: 100px;
+}
 .cloud {
     font-size: 3em;
     color: #333; /* Cloud icon color */
