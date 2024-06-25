@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href='style/main.css'>
+<title>wheather</title>
+</head>
+<body>
+<nav class="navbar w-75 mx-auto rounded-pill navbar-expand-lg navbar-light   justify-content-between">
+  <div class="logo">
+    <img src="images/logo1.png" alt="">
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse    " id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">news</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">livecameras</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="photos.html">photos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="contacts.html">contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- search  -->
+<form class="find-location">
+						
+                            <input class="search-bar"  type="text" placeholder="Find your location..." id="search">
+                        
+						<input class="btn findBtn" type="button" value="Find" id="submit">
+					</form>
+<br>
+<!-- end of the search section  -->
+ 
+<div class="container">
+
+    <div class="row justify-content-between" id="rowData">
+      <!-- ///////////today///////////////////////////////////// -->
+        <div class="col-md-3 mx-2    px-3">
+
+            <header class="m-0 p-0 d-flex justify-content-between"><p id="today" class>today</p> <p id='todaysDate'>13june</p></header>
+            <h2 id="city" class="py-2 h1 px-2">cairo</h2>
+            <div class="forcast d-flex align-items-center">
+                <h2 id="todayDegree" class="degree h1">30.21 <sup>o</sup>C</h2>
+          
+            </div> 
+            <img id="conditionIcon" src="images/sunn.webp" alt="">
+        <p id="conditionText">windy</p>
+        <div class="windy d-flex gap-4   ">
+            
+             <div class="d-flex  text-nowrap gap-1 align-items-center text-center">
+                <i class="fa-solid fa-wind  mb-2"></i>
+            <p id="wind">wind</p>
+             </div>
+          
+           <span class="d-flex gap-3  text-center align-items-center">
+           <i class="fa-solid fa-umbrella mb-2"></i>
+            <p id="humidity">humidity</p>
+           </span>
+           <span class="d-flex gap-3  text-center align-items-center">
+            <i class="fa-regular fa-compass mb-2"></i>
+            <p id="pressure">pressure</p></span>
+            
+        </div>
+        </div>
+        <!-- ///////////////////tomorow////////////////////////////// -->
+        <div class="col-md-3 mx-2   d-flex  align-items-center flex-column">
+
+            <header class="m-0 p-0 d-flex justify-content-center align-items-center"><p id="tomorow">tomorow</p></header>
+            <div class="wstate">
+                <img id="tomorowImage" src="images/sunn.webp" alt="" width="90">
+            </div>
+            <div class="forcast d-flex align-items-center">
+                <h2 id="tomorowMax" class="degree h1">30.21 <sup>o</sup>C</h2>
+          
+            </div>
+            <p id="tomorowMin">27.6o</p>
+            
+        <p id="tomorowCond">sunny</p>
+        <div class="windy">
+           
+        </div>
+        </div>
+        <!-- /////////////////////////////thedayafter/////////////////////////// -->
+ <div class="col-md-3 mx-2   d-flex  align-items-center flex-column">
+
+            <header class="m-0 p-0 d-flex justify-content-center align-items-center"><p id="thedayafter">tomorow</p></header>
+            <div class="wstate">
+                <img id="lastImg" src="images/sunn.webp" alt="" width="90">
+            </div>
+            <div class="forcast d-flex align-items-center">
+                <h2 id="lastMax" class="degree h1">30.21 <sup>o</sup>C</h2>
+          
+            </div>
+            <p id="lastMin">27.6o</p>
+            
+        <p id="lastCond">sunny</p>
+        <div class="windy">
+           
+        </div>
+        </div>
+
+        
+    </div>
+        
+</div>
+<br>
+<br>
+
+</body>
+<footer class="site-footer">
+				<div class="containar">
+					<div class="row justify-content-center">
+						<div class="col-md-8 ">
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter your email to subscribe...">
+								<input class="btn btn-danger rounded-2" type="submit" value="Subscribe">
+							</form>
+						</div>
+						<div class="col-md-12 col-md-offset-1">
+							<div class="social-links">
+								<a href="#"><i class="fa-brands fa-facebook"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-google-plus"></i></a>
+								<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<p class="colophon text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+				</div>
+			</footer>
+
+
+
+      
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</html>

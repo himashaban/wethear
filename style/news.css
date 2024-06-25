@@ -1,0 +1,139 @@
+body {
+    background-color: #F6EBD4;
+}
+
+.headline {
+    font-family: "UnifrakturCook", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.side-social{
+    width: 5px;
+    
+}
+.side-social i:hover {
+    transform: scale(1.5);
+    /* Increase the scale factor as needed */
+    transition: transform 0.3s ease;
+    /* Add a transition effect */
+    visibility: visible;
+}
+img{
+    width: 300px;
+    height: 150px;
+}
+.search-input {
+    padding-right: 30px;
+    /* Adjust this value to fit your needs */
+    
+    border: none;
+    outline: none;
+    /* font-family: 'Font Awesome 5 Free'; */
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.search-input::placeholder {
+    color: #000;
+    /* Change the color as needed */
+}
+.navbar {
+    margin: auto;
+    backdrop-filter: blur(100px);
+    position: relative;
+    width: 963px;
+
+
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+
+}
+
+.navbar a {
+    font-family: "UnifrakturCook", cursive;
+ 
+    color: black;
+    
+
+   
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+
+}
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    float: left;
+    margin-right: 10px;
+
+
+
+
+    font-size: 20px;
+
+
+}
+
+.nav-link {
+    position: relative;
+    color: aliceblue;
+
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.collapse {
+    justify-content: right;
+    justify-content: space-around;
+}
+/* HTML:*/
+.loader {
+  width: 120px;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  filter: blur(5px) contrast(10) hue-rotate(60deg);
+  mix-blend-mode: darken;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  width: 40px;
+  border-radius: 50%;
+  background: #000000;
+  animation: l3 1s infinite alternate;
+}
+.loader:after {
+  --s:-1;
+}
+@keyframes l3{
+  90%,100% {transform: translate(calc(var(--s,1)*30px))}
+}
